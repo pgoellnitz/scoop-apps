@@ -1,4 +1,3 @@
-
 {
     "version": "3.0.5",
     "description": "MusicBrainz Picard portable music tagger",
@@ -6,27 +5,27 @@
     "license": "GPL-2.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://data.musicbrainz.org/pub/musicbrainz/picard/MusicBrainz-Picard-3.0.5.exe#/picard.exe",
+            "url": "https://data.musicbrainz.org/pub/musicbrainz/picard/MusicBrainz-Picard-3.0.5.exe",
             "hash": "md5:0c2e1f5c77d5d425ef163592bf06e673"
         }
     },
     "bin": "picard.exe",
     "shortcuts": [
-        [
-            "picard.exe",
-            "MusicBrainz Picard"
-        ]
+        ["picard.exe", "MusicBrainz Picard"]
     ],
-    "persist": "MusicBrainz-Picard",
     "checkver": {
         "url": "https://picard.musicbrainz.org/downloads/",
-        "regex": "([\\d.]+) 64-bit portable"
+        "regex": "(?s)(?<version>[\\d.]+).*?64-bit portable"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://data.musicbrainz.org/pub/musicbrainz/picard/MusicBrainz-Picard-$version.exe#/picard.exe"
+                "url": "https://data.musicbrainz.org/pub/musicbrainz/picard/MusicBrainz-Picard-$version.exe"
             }
+        },
+        "hash": {
+            "url": "https://picard.musicbrainz.org/downloads/",
+            "find": "(?s)$version.*?64-bit portable.*?([a-fA-F0-9]{32})"
         }
     }
 }
