@@ -1,0 +1,19 @@
+{
+  "version": "2.0.0",
+  "description": "AudioAuditor",
+  "homepage": "https://github.com/Angel2mp3/AudioAuditor",
+  "license": "Apache-2.0",
+  "url": "https://github.com/Angel2mp3/AudioAuditor/releases/download/V2.0.0/AudioAuditor.exe",
+  "hash": "e172a03a8de076bbc4cf5768366075c7fec4fecf8933052bce318367a75bbe4b",
+  "shortcuts": [
+    ["AudioAuditor.exe", "AudioAuditor"]
+  ],
+  "checkver": "github",
+  "autoupdate": {
+    "url": "https://github.com/Angel2mp3/AudioAuditor/releases/download/V$version/AudioAuditor.exe",
+    "hash": {
+      "url": "$url.sha256"
+    }
+  },
+  "bin": "AudioAuditor.exe"
+}
