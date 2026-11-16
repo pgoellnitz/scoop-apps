@@ -5,6 +5,7 @@
     "license": "GPL-2.0-only",
     "url": "https://www.kinovea.org/setup/kinovea.2025.2/2025.2.0/Kinovea-2025.2.0.zip",
     "hash": "sha1:7be75f7549e5f7eca27af40b0127cdc492f3b121",
+    "bin": "Kinovea.exe",
     "shortcuts": [
         [
             "Kinovea.exe",
