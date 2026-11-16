@@ -1,0 +1,25 @@
+{
+    "version": "2025.2.0",
+    "description": "Free video player and motion analysis tool for sports and movement analysis (portable build)",
+    "homepage": "https://www.kinovea.org/",
+    "license": "GPL-2.0-only",
+    "url": "https://www.kinovea.org/setup/kinovea.2025.2/2025.2.0/Kinovea-2025.2.0.zip",
+    "hash": "sha1:7be75f7549e5f7eca27af40b0127cdc492f3b121",
+    "shortcuts": [
+        [
+            "Kinovea.exe",
+            "Kinovea"
+        ]
+    ],
+    "checkver": {
+        "url": "https://www.kinovea.org/download/",
+        "regex": "Kinovea-(\\d+\\.\\d+(?:\\.\\d+)?)\\.zip"
+    },
+    "autoupdate": {
+        "url": "https://www.kinovea.org/setup/kinovea.$majorVersion.$minorVersion/$version/Kinovea-$version.zip",
+        "hash": {
+            "url": "https://www.kinovea.org/download/",
+            "regex": "zip\\s*(?:<[^>]+>\\s*)*([a-fA-F0-9]{40})"
+        }
+    }
+}
